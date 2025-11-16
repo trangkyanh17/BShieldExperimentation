@@ -1,6 +1,6 @@
-id=bshield_bypasser
-name=BShield Bypasser
-version=v1.1
-versionCode=11
+id=simple_bshield_bypass_module
+name=Simple BShield Bypass Module
+version=v1
+versionCode=1
 author=RainyXeon
 description=Simple module to pass BShield in VNeID, Techcombank...
