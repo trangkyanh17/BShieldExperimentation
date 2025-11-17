@@ -32,7 +32,7 @@ Most of image extracted from this issues in his repo: <https://gitlab.com/cuynu/
 
 ## After words
 
-At the end, we want to cuynu also know that sometimes you need to rethink twice before posing anything that someone shared for you. It's often not your works and maybe not even the people who share you. Hope in the days ahead, you don't have to experience this in the future. Now we respectfully wants you to do what we said in the section above.
+At the end, I (RainyXeon) want to cuynu also know that sometimes you need to rethink twice before posing anything that someone shared for you. It's often not your works and maybe not even the people who share you. Hope in the days ahead, you don't have to experience this in the future. Now I respectfully wants you to do what we said in the section above.
 
 Best regards,
 
