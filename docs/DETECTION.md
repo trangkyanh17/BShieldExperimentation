@@ -22,6 +22,15 @@ These properties can be hidden easily by overriding them, for example:
 ```sh
 resetprop -n -p init.svc.adb_root ""
 resetprop -n -p service.adb.root ""
+
+# by Cuynu & RainyXeon and Jan
+resetprop init.svc.adb_root stopped
+resetprop init.svc.adbd stopped
+resetprop persist.sys.usb.config mtp
+resetprop ro.adb.secure 1
+resetprop ro.secure 1
+resetprop ro.debuggable 0
+resetprop service.adb.root 0
 ```
 
 **Note:** These properties will reset on reboot.
@@ -56,6 +65,9 @@ If your ROM is running with **permissive SELinux**, certain attacks may be possi
 
 **Solution:**
 - Set SELinux to **Enforcing**
+```sh
+setenforce 1
+```
 - Use a kernel or ROM with **Enforcing SELinux**
 
 ## Package name detection
