@@ -20,11 +20,10 @@ BShield is currently implemented in several leading Vietnamese apps such as VNeI
 
 See more on [docs/DETECTION.md](docs/DETECTION.md).
 
-## Community
-
-- [DeepinRain Telegram Channel](https://t.me/deepinrain)
-- [DeepinRain Support Group](https://t.me/deepinrain_playground)
-
 ## License
 
 This project is under [The 3-Clause BSD License](LICENSE).
+
+## Credit
+- [Renia in RainyLand](https://t.me/RainyXeon)
+- [Jan](tg://user?id=6699410787)
