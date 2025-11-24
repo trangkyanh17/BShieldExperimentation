@@ -94,16 +94,6 @@ In some releases of VNeID, BShield was able to detect if the app was being hooke
 **Solution:**  
 If you are still experiencing this detection, check your ReZygisk or ZygiskNext version.
 
-## [UNCONFIRMED] Bootloader check, sys call check?
-
-In the recent release of VNeID, it act so weird liek auto kick out when already inside. It take a bit long to detect and response.
-
-Currently we don't know what it detects but current solution is to put their package name into [TrickyStore](https://github.com/5ec1cff/TrickyStore) target.txt file like:
-
-```txt
-com.vnid
-```
-
 ## [UNCONFIRMED] Bootloader check, `syscall` check
 
 In recent versions of VNeID (CA-E005 error), the app behaves strangely, such as kicking the user out after already logging in. The detection response also appears slower than usual.
