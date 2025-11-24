@@ -23,7 +23,7 @@ These properties can be hidden easily by overriding them, for example:
 resetprop -n -p init.svc.adb_root ""
 resetprop -n -p service.adb.root ""
 
-# by Cuynu & RainyXeon and Jan
+# by RainyXeon and Jan
 resetprop init.svc.adb_root stopped
 resetprop init.svc.adbd stopped
 resetprop persist.sys.usb.config mtp
