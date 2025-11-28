@@ -12,7 +12,7 @@ This document lists all the detections observed in BShield for Android. The info
   - [Error Code 2 (Vitural Machine Detection)](#error-code-2-vitural-machine-detection)
   - [Error Code 3 (App List Detection)](#error-code-3-app-list-detection)
   - [Error Code 4 (Debug Tool Detection, Rare)](#error-code-4-debug-tool-detection-rare)
-  - [Error Code 5 (Root Detection, Rare)](#error-code-5-root-detection-rare)
+  - [Error Code 5 (Root Detection)](#error-code-5-root-detection)
     - [System properties](#system-properties)
     - [Maps detection](#maps-detection)
     - [Enforcing status](#enforcing-status)
@@ -73,7 +73,7 @@ Or if you don't use root, just don't install the root manager app in your device
 
 This error occurs when you use google's debug tools to run. This won't happen in the production build of the app. If you experience this error, please contact the app developers or let me know.
 
-## Error Code 5 (Root Detection, Rare)
+## Error Code 5 (Root Detection)
 
 **Reference link:** <https://vneid.gov.vn/shield-warning?code=5>
 
