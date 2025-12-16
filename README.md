@@ -21,5 +21,6 @@ This project is under [The 3-Clause BSD License](LICENSE).
 
 ## Credit
 
-- [Renia in RainyLand](https://t.me/RainyXeon)
-- [Jan](tg://user?id=6699410787)
+- [@RainyXeon](https://github.com/RainyXeon)
+- [@j4nDr01d](https://github.com/j4nDr01d)
+- [@gnadgnaoh (xes)](https://github.com/gnadgnaoh)
