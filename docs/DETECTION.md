@@ -19,7 +19,7 @@ This document lists all the detections observed in BShield for Android. The info
     - [Package name detection](#package-name-detection)
     - [Leaks from custom launchers](#leaks-from-custom-launchers)
     - [\[UNCONFIRMED\] JNI hook detection](#unconfirmed-jni-hook-detection)
-    - [\[UNCONFIRMED\] Bootloader check, `syscall` check](#unconfirmed-bootloader-check-syscall-check)
+    - [Bootloader check, `syscall` check (weird behavior)](#bootloader-check-syscall-check-weird-behavior)
     - [\[UNCONFIRMED\] KSU/AP module image proc loop detection](#unconfirmed-ksuap-module-image-proc-loop-detection)
   - [Error Code 6 (Unlocked Bootloader Detection, Unused)](#error-code-6-unlocked-bootloader-detection-unused)
   - [Error Code 7 (App Detection, Rare)](#error-code-7-app-detection-rare)
