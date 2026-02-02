@@ -266,7 +266,7 @@ Safe practice, don't enable ADB debug mode when you don't use it.
 
 ## Error Code 11 (Developer Mode Detection)
 
-**Reference link:** <https://vneid.gov.vn/shield-warning?code=10>
+**Reference link:** <https://vneid.gov.vn/shield-warning?code=11>
 
 This error occurs when you use Developer Mode in your device.
 
