@@ -201,9 +201,9 @@ In some releases of VNeID, BShield was able to detect if the app was being hooke
 **Solution:**  
 If you are still experiencing this detection, check your ReZygisk or ZygiskNext version.
 
-### Bootloader check, `syscall` check (weird behavior)
+### Bootloader check
 
-In recent versions of VNeID (CA-E005 error), the app behaves strangely, such as kicking the user out after already logging in. The detection response also appears slower than usual.
+I can confirm that Bshield is checking bootloader in the early 2026. Note is it only check of locking status, revoked attestation key can still usable for now.
 
 It is currently unclear what BShield is detecting here. Current solution is to install [TrickyStore](https://github.com/5ec1cff/TrickyStore), put the package name into target.txt file like this:
 
