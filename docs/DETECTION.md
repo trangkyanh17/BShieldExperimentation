@@ -102,7 +102,7 @@ BShield can also detect whether the memory maps contain traces of **LineageOS** 
 
 You can verify this using the **Native Detector** tool ([download](https://dl.reveny.me/)).
 
-For example, it may report "Injection Detection" or "LineageOS Detected (14)".  
+For example, it may report "Injection Detection".  
 Alternatively, you can check manually with:
 
 ```sh
