@@ -1,6 +1,6 @@
-# Những kiểm tra / lỗ hổng mà BShield có thể kiểm tra trên Android
+# Tổng hợp những kiểm tra, phát hiện lỗ hổng bảo mật của BShield trên Android
 
-Tài liệu này liệt kê tất cả các cơ chế phát hiện đã được quan sát trong BShield trên Android. Thông tin chính xác tính đến ngày 8 tháng 2 năm 2026. Nếu bạn phát hiện thêm các cơ chế phát hiện khác, hãy thoải mái báo cáo trong tab Issues.
+Tài liệu này liệt kê tất cả các cơ chế kiểm tra, phát hiện lỗ hổng bảo mật của Bshield trên thiết bị Android và cách để bypass các cơ chế trên tính đến ngày 8 tháng 2 năm 2026. Nếu bạn phát hiện thêm các cơ chế phát hiện khác, hãy thoải mái báo cáo trong tab Issues.
 
 > [!CAUTION]
 > **Dự án này chỉ phục vụ mục đích giáo dục. Mục tiêu là làm nổi bật những điểm yếu của các giải pháp bảo mật hiện tại và khuyến khích phát triển những giải pháp thay thế tốt hơn, đáng tin cậy hơn. Hãy sử dụng thông tin này một cách có trách nhiệm. KHÔNG sử dụng cho mục đích độc hại. Tôi không chịu trách nhiệm cho bất kỳ hành động nào được thực hiện bởi người dùng của module hoặc dự án này.**
@@ -8,8 +8,8 @@ Tài liệu này liệt kê tất cả các cơ chế phát hiện đã được
 **Mục lục:**
 
 - [Những kiểm tra / lỗ hổng mà BShield có thể kiểm tra trên Android](#những-kiểm-tra--lỗ-hổng-mà-bshield-có-thể-kiểm-tra-trên-android)
-  - [Mã lỗi 1 (Phát hiện ứng dụng bị chỉnh sửa)](#mã-lỗi-1-phát-hiện-ứng-dụng-bị-chỉnh-sửa)
-  - [Mã lỗi 2 (Phát hiện máy ảo)](#mã-lỗi-2-phát-hiện-máy-ảo)
+  - [Mã lỗi 1 (Phát hiện ứng dụng đã bị chỉnh sửa)](#mã-lỗi-1-phát-hiện-ứng-dụng-đã-bị-chỉnh-sửa)
+  - [Mã lỗi 2 (Phát hiện máy ảo, giả lập)](#mã-lỗi-2-phát-hiện-máy-ảo,-giả-lập)
   - [Mã lỗi 3 (Phát hiện danh sách ứng dụng)](#mã-lỗi-3-phát-hiện-danh-sách-ứng-dụng)
   - [Mã lỗi 4 (Phát hiện công cụ debug, hiếm)](#mã-lỗi-4-phát-hiện-công-cụ-debug-hiếm)
   - [Mã lỗi 5 (Phát hiện root)](#mã-lỗi-5-phát-hiện-root)
@@ -27,40 +27,40 @@ Tài liệu này liệt kê tất cả các cơ chế phát hiện đã được
   - [Mã lỗi 10 (Phát hiện chế độ debug ADB)](#mã-lỗi-10-phát-hiện-chế-độ-debug-adb)
   - [Mã lỗi 11 (Phát hiện chế độ nhà phát triển)](#mã-lỗi-11-phát-hiện-chế-độ-nhà-phát-triển)
 
-## Mã lỗi 1 (Phát hiện ứng dụng bị chỉnh sửa)
+## Mã lỗi 1 (Phát hiện ứng dụng đã bị chỉnh sửa)
 
 **Link tham khảo:** <https://vneid.gov.vn/shield-warning?code=1>
 
-Lỗi này xảy ra khi bạn cài đặt ứng dụng chưa được ký hoặc ứng dụng đã bị chỉnh sửa. Đối với các nhà phát triển ứng dụng patch, hiện tại tôi không tìm ra cách nào để làm cho nó hoạt động. Bạn có thể thử, nhưng sẽ rất khó để thành công.
+Lỗi này xảy ra khi bạn cài đặt ứng dụng dùng cơ chế kiểm tra của BShield mà chưa được ký hoặc đã bị chỉnh sửa. Đối với các nhà phát triển đã patch ứng dụng , hiện tại tôi không tìm ra cách nào để làm cho nó hoạt động. Bạn có thể thử, nhưng sẽ rất khó để thành công.
 
 **Cách khắc phục:**  
-Gỡ bỏ ứng dụng đã bị chỉnh sửa hoặc chưa ký khỏi hệ thống và cài đặt lại từ Google Play.
+Gỡ bỏ ứng dụng dùng cơ chế kiểm tra của BShield đã bị chỉnh sửa hoặc chưa ký khỏi hệ thống và cài đặt lại từ Google Play.
 
-## Mã lỗi 2 (Phát hiện máy ảo)
+## Mã lỗi 2 (Phát hiện cài đặt trên máy ảo, giả lập)
 
 **Link tham khảo:** <https://vneid.gov.vn/shield-warning?code=2>
 
-Lỗi này xảy ra khi bạn cài đặt ứng dụng trong máy ảo.
+Lỗi này xảy ra khi bạn cài đặt ứng dụng trong máy ảo, giả lập.
 
 **Cách khắc phục:**  
-Không cài đặt ứng dụng trong máy ảo (hiển nhiên :v).
+ Không cài đặt ứng dụng trong máy ảo, giả lập (hiển nhiên :v).
 
 ## Mã lỗi 3 (Phát hiện danh sách ứng dụng)
 
 **Link tham khảo:** <https://vneid.gov.vn/shield-warning?code=3>
 
-Lỗi này xảy ra khi bạn cài đặt trình quản lý root hoặc các ứng dụng đáng ngờ trên thiết bị.
+Lỗi này xảy ra khi bạn cài đặt trình quản lý root hoặc các ứng dụng đáng ngờ, module lsposed trên thiết bị.
 
 Dưới đây là danh sách các ứng dụng mà BShield hiện đang phát hiện (có thể còn nhiều hơn; đây chỉ là những ứng dụng đã được xác nhận qua thử nghiệm. Bạn có thể yêu cầu cập nhật trong tab Issues):
 
 ```txt
 com.topjohnwu.magisk
 com.drdisagree.iconify
-<phần lớn các ứng dụng lsposed>
+<phần lớn các module lsposed>
 ```
 
 **Cách khắc phục:**
-Bạn có thể sử dụng tổ hợp:
+Bạn hãy sử dụng module KSU/Magisk và module LSposed dưới đây (ưu tiên FOSS):
 
 - [ReLSPosed](https://github.com/ThePedroo/ReLSPosed)
 - [HMA-OSS](https://github.com/frknkrc44/HMA-OSS)
@@ -73,34 +73,34 @@ Hoặc nếu bạn không dùng root, đơn giản là đừng cài đặt trìn
 
 **Link tham khảo:** [https://vneid.gov.vn/shield-warning?code=4](https://vneid.gov.vn/shield-warning?code=4)
 
-Lỗi này xảy ra khi bạn chạy ứng dụng bằng các công cụ debug của Google. Lỗi này sẽ không xuất hiện trong bản build production của ứng dụng. Nếu bạn gặp lỗi này, hãy liên hệ với nhà phát triển ứng dụng hoặc báo cho tôi biết.
+Lỗi này xảy ra khi bạn chạy ứng dụng dùng cơ chế kiểm tra của BShield bằng các công cụ debug của Google. Lỗi này sẽ không xuất hiện trong bản build production của ứng dụng. Nếu bạn gặp lỗi này, hãy liên hệ với nhà phát triển ứng dụng hoặc báo cho tôi biết.
 
 ## Mã lỗi 5 (Phát hiện root)
 
 **Link tham khảo:** [https://vneid.gov.vn/shield-warning?code=5](https://vneid.gov.vn/shield-warning?code=5)
 
-Đây là cơ chế phát hiện khó vượt qua nhất của BShield khi bạn sử dụng root, bao gồm nhiều dạng phát hiện root và hệ thống khác nhau. Dưới đây là một số cơ chế đã được xác nhận:
+Đây là cơ chế phát hiện khó vượt qua nhất của BShield khi bạn sử dụng trên thiết bị đã root hoặc thiết bị chạy custom rom, bao gồm nhiều dạng phát hiện root và các đặc tính hệ thống khác nhau. Dưới đây là một số cơ chế đã được xác nhận:
 
-### Thuộc tính hệ thống
+### Đặc tính hệ thống:
 
-BShield phát hiện một số thuộc tính hệ thống Android nhất định. Một số ví dụ đã biết:
+BShield phát hiện đặc tính hệ thống Android dưới đây (xuất hiện ở đa số custom rom AOSP). Một số đã biết:
 
 - `init.svc.adb_root`
 - `service.adb.root`
 
 **Cách khắc phục:**
-Các thuộc tính này có thể được ẩn bằng cách override, ví dụ:
+Các đặc tính này có thể được fix bằng cách override, ví dụ:
 
 ```sh
 resetprop -n -p init.svc.adb_root ""
 resetprop -n -p service.adb.root ""
 ```
 
-**Lưu ý:** Các thuộc tính này sẽ bị reset sau khi reboot. Bạn có thể sử dụng module ví dụ của tôi trong tab Release để tự động fix sau mỗi lần khởi động.
+**Lưu ý:** Các đặc tính này sẽ bị khôi phục lại như cũ sau khi reboot. Bạn có thể sử dụng module của tôi trong tab Release để tự động fix sau mỗi lần khởi động.
 
-### Phát hiện qua map bộ nhớ
+### Phát hiện bộ nhớ map đã bị injected
 
-BShield có thể phát hiện map bộ nhớ có chứa dấu vết của các entry liên quan đến injection hay không.
+BShield phát hiện bộ nhớ map có bị injection hay không.
 
 Bạn có thể kiểm tra bằng công cụ **Native Detector** ([tải tại đây](https://github.com/reveny/Android-Native-Root-Detector/releases/latest)).
 
@@ -108,11 +108,11 @@ Ví dụ, nó có thể báo lỗi "Injection Detection".
 
 **Một số cách khắc phục:**
 
-- Nếu kernel của bạn hỗ trợ KernelSU + SuSFS (bật SUS_MAP), bạn có thể thêm các đường dẫn map bị rò rỉ vào danh sách map của SuSFS.
-- Nếu bạn dùng module font, nó cũng có thể làm rò rỉ map. Hãy gỡ bỏ hoặc thêm đường dẫn của nó vào SUS_MAP như trên.
-- Bạn cũng có thể thử module TreatWheel của Pedro để ẩn maps, nhưng hiệu quả có hạn và yêu cầu build ReZygisk.
+- Nếu kernel của bạn hỗ trợ KernelSU + SuSFS (đã bật tính năng SUS_MAP), bạn có thể thêm các đường dẫn bộ nhớ map bị phát hiện injected vào danh sách map của SuSFS (SUS_MAP).
+- Nếu bạn dùng module thay đổi font, nó cũng có thể làm cho bộ nhớ map bị injected. Hãy gỡ bỏ hoặc thêm đường dẫn của nó vào SUS_MAP như trên.
+- Bạn cũng có thể thử dùng module TreatWheel của Pedro để ẩn các bộ nhớ map bị injected, nhưng hiệu quả có hạn (so với SUS_MAP của SUSFS) và yêu cầu dùng chung với ReZygisk.
 
-**Lưu ý về phát hiện maps của /system/framework/framework-res.apk.**
+**Lưu ý về phát hiện các đường dẫn bộ nhớ maps của /system/framework/framework-res.apk.**
 
 Bạn có thể thấy trong công cụ **Native Detector** báo **Found Injection**, với kết quả tương tự như sau:
 
@@ -138,9 +138,9 @@ Tuy nhiên, cơ chế này đã lỗi thời và vô tình kích hoạt **Found 
 
 Nếu bạn là nhà phát triển kernel tùy chỉnh, bạn có thể revert commit chứa đoạn code ẩn file LineageOS. Nếu bạn là người dùng, bạn không thể làm gì trừ khi thay kernel hoặc yêu cầu nhà phát triển kernel sửa đổi.
 
-### Trạng thái Enforcing
+### Trạng thái Enforcing của Kernel
 
-Đây là dạng phát hiện phổ biến. Không nên sử dụng ROM tùy chỉnh với **SELinux permissive**, vì bị xem là không an toàn theo tiêu chuẩn hiện đại.
+Đây là dạng phát hiện phổ biến. Không nên sử dụng ROM với **SELinux permissive**, vì bị xem là không an toàn theo tiêu chuẩn hiện đại.
 
 BShield yêu cầu **SELinux** phải ở trạng thái **Enforced** để hoạt động bình thường.
 
@@ -154,9 +154,9 @@ setenforce 1
 
 - Sử dụng kernel hoặc ROM với **SELinux Enforcing**
 
-### Phát hiện tên gói
+### Phát hiện tên gói của trình quản lý root
 
-BShield kiểm tra danh sách ứng dụng đã cài để tìm các ứng dụng thường liên quan đến root. Phát hiện gốc nằm ở [mã lỗi 3](#mã-lỗi-3-phát-hiện-danh-sách-ứng-dụng), nhưng vì lý do nào đó, các app như `me.bmax.apatch` hoặc `com.rifsxd.ksunext` sẽ kích hoạt mã lỗi 5 thay vì 3. Có thể đây là cách tạm thời để phát hiện các giải pháp root nâng cao như KernelSU.
+BShield kiểm tra danh sách ứng dụng đã cài để tìm các ứng dụng thường liên quan đến root cũng như đáng ngờ [mã lỗi 3](#mã-lỗi-3-phát-hiện-danh-sách-ứng-dụng), nhưng vì lý do nào đó, các app như `me.bmax.apatch` hoặc `com.rifsxd.ksunext` sẽ kích hoạt mã lỗi 5 thay vì 3
 
 Danh sách ứng dụng bị phát hiện:
 
@@ -169,23 +169,23 @@ me.weishu.kernelsu
 ```
 
 **Cách khắc phục:**
-Sử dụng kết hợp:
+Bạn hãy sử dụng module KSU/Magisk và module LSposed dưới đây (ưu tiên FOSS):
 
 - [ReLSPosed](https://github.com/ThePedroo/ReLSPosed)
 - [HMA-OSS](https://github.com/frknkrc44/HMA-OSS)
 
 để ẩn các ứng dụng này.
 
-### Rò rỉ từ launcher tùy chỉnh
+### Phát hiện dùng module thay đổi launcher tùy chỉnh
 
-BShield có thể phát hiện nhiều module launcher tùy chỉnh, có thể thông qua mount, memory maps hoặc các chỉ dấu khác.
+BShield có thể phát hiện nhiều module thay đổi launcher tùy chỉnh, có thể thông qua mount, memory maps hoặc các chỉ dấu khác.
 
 **Cách khắc phục:**
 Cách đơn giản nhất là gỡ launcher tùy chỉnh và dùng launcher mặc định của hệ thống. Hoặc dùng launcher tiêu chuẩn từ Play Store.
 
-### Kiểm tra bootloader
+### Kiểm tra bootloader có unlock hay không
 
-Tôi có thể xác nhận rằng BShield đã kiểm tra bootloader vào đầu năm 2026. Nó chỉ kiểm tra trạng thái khóa và AOSP keybox; key attestation bị revoke hiện vẫn dùng được.
+Tôi có thể xác nhận rằng BShield đã kiểm tra bootloader vào đầu năm 2026. Nó chỉ kiểm tra trạng thái khóa và với AOSP keybox; hoặc keybox bị revoke hiện vẫn dùng được.
 
 **Cách khắc phục:**
 Cài đặt [JingMatrix/TEESimulator](https://github.com/JingMatrix/TEESimulator), thêm tên gói vào file `target.txt` như sau:
@@ -196,7 +196,7 @@ com.vnid
 
 ### Mount đáng ngờ
 
-Trong thời gian dài, BShield kiểm tra mount để phát hiện root. Điều này thường xảy ra khi cài các module như đổi font hoặc launcher.
+Từ lâu, BShield kiểm tra mount để phát hiện root. Điều này xảy ra khi cài các module dùng cơ chế mount để thay đổi file hệ thống.
 
 Bạn có thể kiểm tra bằng **Native Detector**.
 
@@ -210,18 +210,19 @@ Ví dụ, nó có thể báo "Suspicious Mount".
 
 ### [CHƯA XÁC NHẬN] Phát hiện vòng lặp image proc của module KSU/AP
 
-Theo báo cáo gần đây từ [@Hzzmonet](https://t.me/Hzzmonet), BShield có thể phát hiện vòng lặp image proc của module KSU/AP. Nguyên nhân là các phiên bản KSU/AP cũ dùng OverlayFS, dẫn đến bị phát hiện.
+Theo báo cáo gần đây từ [@Hzzmonet](https://t.me/Hzzmonet), BShield có thể phát hiện vòng lặp image proc của module KSU/AP. Nguyên nhân là các phiên bản KSU/AP cũ dùng cơ chế mount OverlayFS, dẫn đến bị phát hiện.
 
 Bạn có thể kiểm tra bằng **Native Detector**.
 
-Ví dụ, nó có thể báo "KSU/AP loop".
+Ví dụ, nó sẽ báo "KSU/AP loop".
 
 **Cách khắc phục:**
 
-- Nếu bạn dùng KernelSU bản gốc hoặc cũ, hãy dùng module TreatWheel của Pedro để ẩn.
-- Nếu bạn dùng KernelSU-Next, hãy tắt tùy chọn `Use OverlayFS` trong phần cài đặt. Nhớ sao lưu module trước khi thao tác.
+- Nếu bạn dùng KernelSU bản gốc và phiên bản cũ, hãy dùng module TreatWheel của Pedro + ReZygisk để ẩn.
+- Nếu bạn dùng KernelSU-Next phiên bản bản cũ, hãy tắt tùy chọn Use OverlayFS trong phần cài đặt. Nhớ sao lưu module trước khi thao tác vì tất cả module sẽ bị xóa.
+- Với các bạn dùng KSU gốc và fork bản v3 cũng như APatch bản mới đã fix lỗi này
 
-## Mã lỗi 6 (Phát hiện bootloader mở khóa, không sử dụng)
+## Mã lỗi 6 (Phát hiện bootloader mở khóa) hiện tại không sử dụng hoặc có thể đã đưa vào chung code 5 mục Kiểm tra bootloader
 
 **Link tham khảo:** [https://vneid.gov.vn/shield-warning?code=6](https://vneid.gov.vn/shield-warning?code=6)
 
@@ -234,20 +235,20 @@ Cài đặt [JingMatrix/TEESimulator](https://github.com/JingMatrix/TEESimulator
 com.vnid
 ```
 
-## Mã lỗi 7 (Phát hiện ứng dụng, hiếm)
+## Mã lỗi 7 (Phát hiện ứng dụng đáng ngờ) hiếm khi xuất hiện
 
 **Link tham khảo:** [https://vneid.gov.vn/shield-warning?code=7](https://vneid.gov.vn/shield-warning?code=7)
 
-Lỗi này xảy ra khi có ứng dụng đáng ngờ trên thiết bị. Hiếm khi gặp trong thực tế.
+Lỗi này xảy ra khi danh sách ứng dụng có ứng dụng đáng ngờ trên thiết bị. Hiếm khi gặp trong thực tế.
 
 **Cách khắc phục:**
 Giống [mã lỗi 3](#mã-lỗi-3-phát-hiện-danh-sách-ứng-dụng).
 
-## Mã lỗi 8 (Phát hiện ứng dụng dạng Privacy Space)
+## Mã lỗi 8 (Phát hiện ứng dụng đang được chạy ở chế độ không gian khác khác với không gian gốc của máy)
 
 **Link tham khảo:** [https://vneid.gov.vn/shield-warning?code=8](https://vneid.gov.vn/shield-warning?code=8)
 
-Lỗi này xảy ra khi bạn sử dụng ứng dụng trong emulator hoặc app dạng không gian riêng tư.
+Lỗi này xảy ra khi bạn sử dụng ứng dụng dùng cơ chế kiểm tra của BShield trong không gian riêng tư, không gian thứ 2 khác với không gian gốc của máy.
 
 **Cách khắc phục:**
 Không sử dụng ứng dụng bên trong app của bên thứ ba.
@@ -259,7 +260,12 @@ Không sử dụng ứng dụng bên trong app của bên thứ ba.
 Lỗi này xảy ra khi bạn bật chế độ debug ADB trên thiết bị.
 
 **Cách khắc phục:**
-Thực hành an toàn: không bật ADB debug khi không cần dùng.
+Bạn hãy sử dụng module KSU/Magisk và module LSposed dưới đây (ưu tiên FOSS):
+
+- [ReLSPosed](https://github.com/ThePedroo/ReLSPosed)
+- [HMA-OSS](https://github.com/frknkrc44/HMA-OSS)
+
+để ẩn debug ADB
 
 ## Mã lỗi 11 (Phát hiện chế độ nhà phát triển)
 
@@ -269,10 +275,10 @@ Lỗi này xảy ra khi bạn bật Developer Mode trên thiết bị.
 
 **Cách khắc phục:**
 
-Bạn có thể sử dụng tổ hợp:
+Bạn hãy sử dụng module KSU/Magisk và module LSposed dưới đây (ưu tiên FOSS):
 
 - [ReLSPosed](https://github.com/ThePedroo/ReLSPosed)
-- [ImNotADeveloper](https://github.com/notyour777/ImNotADeveloper)
+- [HMA-OSS](https://github.com/frknkrc44/HMA-OSS)
 
 để ẩn Developer Mode và ADB debug mode.
 
