@@ -285,7 +285,7 @@ Hoặc cách tốt nhất: không bật Developer Mode khi không sử dụng.
 
 ## Mã lỗi 12 (Phát hiện thiết bị đang sử dụng ROM tùy chỉnh)
 
-**Link tham khảo:** [https://vneid.gov.vn/shield-warning?code=11](https://vneid.gov.vn/shield-warning?code=11)
+**Link tham khảo:** [https://exits-bshield-mvno.fptshop.com.vn/?code=12](https://exits-bshield-mvno.fptshop.com.vn/?code=12)
 
 Lỗi này xảy ra khi bạn dùng ROM custom trên thiết bị.
 
