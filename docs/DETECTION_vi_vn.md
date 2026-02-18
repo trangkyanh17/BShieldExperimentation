@@ -43,7 +43,7 @@ Gỡ bỏ ứng dụng dùng cơ chế kiểm tra của BShield đã bị chỉn
 Lỗi này xảy ra khi bạn cài đặt ứng dụng trong máy ảo, giả lập.
 
 **Cách khắc phục:**  
- Không cài đặt ứng dụng trong máy ảo, giả lập (hiển nhiên :v).
+Không cài đặt ứng dụng trong máy ảo, giả lập (hiển nhiên :v).
 
 ## Mã lỗi 3 (Phát hiện danh sách ứng dụng)
 
@@ -274,7 +274,6 @@ Bạn hãy sử dụng module KSU/Magisk và module LSposed dưới đây (ưu t
 Lỗi này xảy ra khi bạn bật Developer Mode trên thiết bị.
 
 **Cách khắc phục:**
-
 Bạn hãy sử dụng module KSU/Magisk và module LSposed dưới đây (ưu tiên FOSS):
 
 - [ReLSPosed](https://github.com/ThePedroo/ReLSPosed)
@@ -283,3 +282,14 @@ Bạn hãy sử dụng module KSU/Magisk và module LSposed dưới đây (ưu t
 để ẩn Developer Mode và ADB debug mode.
 
 Hoặc cách tốt nhất: không bật Developer Mode khi không sử dụng.
+
+## Mã lỗi 12 (Phát hiện thiết bị đang sử dụng ROM tùy chỉnh)
+
+**Link tham khảo:** [https://vneid.gov.vn/shield-warning?code=11](https://vneid.gov.vn/shield-warning?code=11)
+
+Lỗi này xảy ra khi bạn dùng ROM custom trên thiết bị.
+
+Hiện tại chỉ mới có duy nhất app FPT Shop là check thêm cái này (https://play.google.com/store/apps/details?id=vn.frt.fptshop.app&hl=vi)
+
+**Cách khắc phục:**
+Cài đặt [JingMatrix/TEESimulator](https://github.com/JingMatrix/TEESimulator), thêm tên gói vào `target.txt`:
